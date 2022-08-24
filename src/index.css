@@ -12,6 +12,7 @@ body {
   background-color: #f2f4f8;
   margin: 0;
   box-sizing: border-box;
+  height: 100vh;
 }
 
 a {
@@ -135,8 +136,25 @@ button {
 }
 
 .pageHeader {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-top: 75px;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #2c2c2c;
+  color: #f2f4f8;
+  height: 65px;
+  width: 100%;
+  font-size: 1.8rem;
   font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar {
@@ -144,8 +162,9 @@ button {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 85px;
-  background-color: #ffffff;
+  height: 60px;
+  background-color: #f2f4f8;
+  color: #2c2c2c;
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -178,8 +197,9 @@ button {
   margin-top: 0.25rem;
   font-size: 14px;
   font-weight: 600;
-  color: #8f8f8f;
+  color: #2c2c2c;
 }
+
 .navbarListItemNameActive {
   color: #2c2c2c;
 }
@@ -401,6 +421,10 @@ button {
   padding: 0;
 }
 
+.lisitingsList {
+  margin-bottom: 5rem;
+}
+
 .categoryListing {
   display: flex;
   justify-content: space-between;
@@ -418,6 +442,7 @@ button {
   height: 100px;
   border-radius: 1.5rem;
   object-fit: cover;
+  z-index: -1;
 }
 @media (min-width: 1024px) {
   .categoryListingImg {
@@ -707,8 +732,9 @@ button {
   font-weight: 600;
 }
 
-.lisitingsList {
+.listingsList {
   padding: 0;
+  margin-bottom: 70px;
 }
 
 .formLabel {
